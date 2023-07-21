@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='Exam1.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/addlogin" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+    <div class="Exam1" id="Exam1">
+        <div id="box1" class="box1">
+            <div class="Q Q1">
+                <div>Q1Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR1" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR1" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR1" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR1" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q2">
+                <div>Q2Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR2" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR2" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR2" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR2" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q3">
+                <div>Q3Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div>
+                    <input type="radio" name="CR3" id="A">
+                    <label for="A">A</label></div>
+                <div>
+                    <input type="radio" name="CR3" id="B">
+                    <label for="B">B</label></div>
+                <div>
+                    <input type="radio" name="CR3" id="C">
+                    <label for="C">C</label></div>
+                <div>
+                    <input type="radio" name="CR3" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q4">
+                <div>Q4Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+
+                <div><input type="radio" name="CR4" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR4" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR4" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR4" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q5">
+                <div>Q5Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR5" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR5" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR5" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR5" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q6">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR6" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR6" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR6" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR6" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q7">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR7" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR7" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR7" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR7" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q8">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR8" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR8" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR8" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR8" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q9">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR9" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR9" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR9" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR9" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q10">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR10" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR10" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR10" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR10" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q11">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR11" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR11" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR11" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR11" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q12">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR12" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR12" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR12" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR12" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q13">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR13" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR13" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR13" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR13" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q14">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR14" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR14" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR14" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR14" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q15">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR15" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR15" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR15" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR15" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q16">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR16" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR16" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR16" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR16" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q17">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR17" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR17" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR17" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR17" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q18">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR18" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR18" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR18" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR18" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q19">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR19" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR19" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR19" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR19" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q20">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR20" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR20" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR20" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR20" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q21">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR21" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR21" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR21" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR21" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q22">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR22" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR22" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR22" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR22" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q23">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR23" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR23" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR23" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR23" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q24">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR24" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR24" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR24" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR24" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q25">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR25" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR25" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR25" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR25" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q26">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR26" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR26" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR26" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR26" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q27">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR27" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR27" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR27" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR27" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q28">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR28" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR28" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR28" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR28" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q29">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR29" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR29" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR29" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR29" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q30">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR30" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR30" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR30" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR30" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q31">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR31" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR31" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR31" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR31" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q32">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR32" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR32" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR32" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR32" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q33">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR33" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR33" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR33" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR33" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q34">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR34" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR34" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR34" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR34" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q35">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR35" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR35" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR35" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR35" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q36">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR36" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR36" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR36" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR36" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q37">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR37" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR37" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR37" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR37" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q38">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR38" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR38" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR38" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR38" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q39">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR39" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR39" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR39" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR39" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q40">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR40" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR40" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR40" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR40" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q41">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR41" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR41" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR41" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR41" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q42">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR42" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR42" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR42" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR42" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q43">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR43" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR43" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR43" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR43" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q44">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR44" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR44" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR44" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR44" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q45">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR45" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR45" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR45" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR45" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q46">
+                <div>Q46Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR46" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR46" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR46" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR46" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q47">
+                <div>Q47Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR47" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR47" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR47" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR47" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q48">
+                <div>QLorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR48" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR48" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR48" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR48" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q49">
+                <div>Q49Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR49" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR49" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR49" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR49" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div class="Q Q50">
+                <div>Q50Lorem ipsum dolor sit amet consectetur adipisicing e</div>
+                <div><input type="radio" name="CR50" id="A">
+                    <label for="A">A</label></div>
+                <div><input type="radio" name="CR50" id="B">
+                    <label for="B">B</label></div>
+                <div><input type="radio" name="CR50" id="C">
+                    <label for="C">C</label></div>
+                <div><input type="radio" name="CR50" id="D">
+                    <label for="D">D</label></div>
+            </div>
+            <div id="check">
+                <input type="checkbox">REview
+            </div>
+            <div class="subbtn" id="subbtn">
+                <button class="subbtn1" id="subbtn11">⇚prev</button>
+                <button class="subbtn2" id="subbtn12">next⇛</button>
+            </div>
+        </div>
+        <div id="box2" class="box2">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+            <button>13</button>
+            <button>14</button>
+            <button>15</button>
+            <button>16</button>
+            <button>17</button>
+            <button>18</button>
+            <button>19</button>
+            <button>20</button>
+            <button>21</button>
+            <button>22</button>
+            <button>23</button>
+            <button>24</button>
+            <button>25</button>
+            <button>26</button>
+            <button>27</button>
+            <button>28</button>
+            <button>29</button>
+            <button>30</button>
+            <button>31</button>
+            <button>32</button>
+            <button>33</button>
+            <button>34</button>
+            <button>35</button>
+            <button>36</button>
+            <button>37</button>
+            <button>38</button>
+            <button>39</button>
+            <button>40</button>
+            <button>41</button>
+            <button>42</button>
+            <button>43</button>
+            <button>44</button>
+            <button>45</button>
+            <button>46</button>
+            <button>47</button>
+            <button>48</button>
+            <button>49</button>
+            <button>50</button>
+        </div>
+
+    </div>
+    <div class="Exam2" id="Exam2"></div>
+    </div>
+     <footer class="footer font">
+            <div class="footerword">{{para["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+    <script src="{{ url_for('static', filename='Exam3.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+.contact {
+    position: relative;
+    top: 150px;
+    min-height: 100vh;
+    width: 1288px;
+    margin: auto;
+    font-size: 30px;
+}
+
+.contact1,
+.contact2,
+.contact3,
+.contact4 {
+    display: flex;
+}
+
+.contact1 img,
+.contact2 img,
+.contact3 img,
+.contact4 img {
+    height: 260px;
+    border-radius: 102px;
+    width: 260px;
+}
+
+.c1 {
+    width: 900px;
+    margin-left: 80px;
+}
+
+.c2 {
+    margin-left: 15px;
+    width: 900px;
+    margin-right: 70px;
+}
+
+.c3 {
+    width: 900px;
+    margin-left: 80px;
+}
+
+.c4 {
+    margin-left: 15px;
+    width: 900px;
+    margin-right: 70px;
+}
+
+.h1 {
+    font-weight: bold;
+}
+
+.map {
+    position: relative;
+    top: 250px;
+}
+
+.map iframe {
+    margin: auto;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    width: 800px;
+    height: 600px;
+}

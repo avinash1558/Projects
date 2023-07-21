@@ -1,0 +1,266 @@
+.examdiv {
+    position: relative;
+    top: 150px;
+    width: 100%;
+    display: flex;
+}
+
+#inputbtn button {
+    font-size: 30px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+}
+
+#inputbtn button:hover {
+    background: white;
+    color: black;
+}
+
+.addh1 {
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    background-color: chocolate;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#inputpoint {
+    width: 150px;
+    background: black;
+    color: white;
+    border-right: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+}
+
+#t1,
+#t2,
+#t3,
+#t4,
+#t5,
+#t6,
+#t7,
+#t8,
+#t9,
+#t10,
+#t11,
+#t12,
+#t13,
+#t14,
+#t15,
+#t16,
+#t17,
+#t18,
+#t19,
+#t20,
+#t21,
+#t22,
+#t23,
+#t24,
+#t25,
+#t26,
+#t27,
+#t28,
+#t29,
+#t30,
+#t31,
+#t32,
+#t33,
+#t34,
+#t35,
+#t37,
+#t36,
+#t38,
+#t39,
+#t40,
+#t41,
+#t42,
+#t43,
+#t44,
+#t45,
+#t46,
+#t47,
+#t48,
+#t49,
+#t50 {
+    display: none;
+    border-bottom: 3px solid white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#examdetail {
+    width: 84vw;
+    height: 230px;
+    border: 5px solid yellow;
+    border-radius: 7px;
+    background: tomato;
+}
+
+#examdetail2 div {
+    width: 1354px;
+    font-size: 30px;
+    margin: 12px auto;
+}
+
+#examdetail2 button {
+    margin: 0px 43px;
+    background: yellow;
+    border-radius: 12px;
+    width: 119px;
+    height: 35px;
+    font-size: 25px;
+    border: 3px solid;
+}
+
+#examdetail2 button:hover {
+    background: white;
+    color: black;
+}
+
+#examdetail input {
+    height: 30px;
+    width: 270px;
+    border-radius: 6px;
+}
+
+#examdetail1 {
+    height: 46px;
+    font-size: 40px;
+    border-bottom: 5px solid yellow;
+}
+
+.Q {
+    border-radius: 6px;
+    font-size: 25px;
+    height: 30px;
+    width: 1200px;
+}
+
+.input {
+    font-size: 25px;
+}
+
+.input div {
+    margin: 10px;
+}
+
+.A div input {
+    border-radius: 6px;
+    font-size: 25px;
+    margin-left: 40px;
+    height: 25px;
+    width: 400px;
+}
+
+#c1,
+#c2,
+#c3,
+#c4,
+#c5,
+#c6,
+#c7,
+#c8,
+#c9,
+#c10,
+#c11,
+#c12,
+#c13,
+#c14,
+#c15,
+#c16,
+#c17,
+#c18,
+#c19,
+#c20,
+#c21,
+#c22,
+#c23,
+#c24,
+#c25,
+#c26,
+#c27,
+#c28,
+#c29,
+#c30,
+#c31,
+#c32,
+#c33,
+#c34,
+#c35,
+#c37,
+#c38,
+#c39,
+#c40,
+#c41,
+#c42,
+#c43,
+#c44,
+#c45,
+#c46,
+#c47,
+#c48,
+#c49,
+#c50 {
+    border-radius: 6px;
+    font-size: 25px;
+    margin-left: 31px;
+}
+
+.subbtn1,
+.subbtn2 {
+    font-size: 36px;
+    width: 139px;
+    height: 80px;
+    background: tomato;
+    border-radius: 57px;
+}
+
+.subbtn1:hover {
+    background: white;
+    color: black;
+}
+
+.subbtn2:hover {
+    background: white;
+    color: black;
+}
+
+.subbtn2 {
+    position: relative;
+    left: 425px;
+}
+
+.subbtn {
+    display: none;
+    margin: 25px auto;
+    width: 760px;
+}
+
+#no_of_q {
+    height: 35px;
+    width: 234px;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10,
+#box11,
+#box12,
+#box13 {
+    display: none;
+}
+
+#inputbtn2 {
+    display: none;
+}

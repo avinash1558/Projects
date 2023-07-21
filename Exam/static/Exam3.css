@@ -1,0 +1,151 @@
+.Exam1 {
+    position: relative;
+    top: 150px;
+    display: flex;
+}
+
+.box2 {
+    border: 3px solid yellow;
+    border-radius: 15px;
+    background: wheat;
+    height: 551px;
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box1 {
+    background: wheat;
+    width: 74vw;
+    font-size: 30px;
+    border-radius: 15px;
+    border: 3px solid yellow;
+}
+
+.box2 button {
+    height: 40px;
+    width: 64px;
+    border-radius: 50px;
+    margin: auto;
+    font-size: 25px;
+    background-color: tomato;
+}
+
+.box2 button:hover {
+    background-color: rgb(248, 246, 246);
+}
+
+.Q {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+input[type="radio"] {
+    height: 18px;
+    width: 18px;
+}
+
+.subbtn1,
+.subbtn2 {
+    font-size: 36px;
+    width: 139px;
+    height: 80px;
+    background: tomato;
+    border-radius: 57px;
+}
+
+.subbtn1:hover {
+    background: white;
+    color: black;
+}
+
+.subbtn2:hover {
+    background: white;
+    color: black;
+}
+
+.subbtn2 {
+    position: relative;
+    left: 425px;
+}
+
+.subbtn {
+    /* display: none; */
+    margin: 142px auto;
+    width: 760px;
+}
+
+.Q {
+    display: none;
+}
+
+.Q2,
+.Q3,
+.Q4,
+.Q5,
+.Q6,
+.Q7,
+.Q8,
+.Q9,
+.Q10,
+.Q11,
+.Q12,
+.Q13,
+.Q14,
+.Q15,
+.Q16,
+.Q17,
+.Q18,
+.Q19,
+.Q20,
+.Q21,
+.Q22,
+.Q23,
+.Q24,
+.Q25,
+.Q26,
+.Q27,
+.Q28,
+.Q29,
+.Q30,
+.Q31,
+.Q32,
+.Q33,
+.Q34,
+.Q35,
+.Q37,
+.Q36,
+.Q38,
+.Q39,
+.Q40,
+.Q41,
+.Q42,
+.Q43,
+.Q44,
+.Q45,
+.Q46,
+.Q47,
+.Q48,
+.Q49,
+.Q50 {
+    display: none;
+}
+
+.Q1 {
+    display: block;
+}
+
+#check {
+    position: absolute;
+    top: 250px;
+    left: 36px;
+}
+
+input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+}
+
+.box2 button {
+    display: none;
+}

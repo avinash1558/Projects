@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='feedback.css') }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/addlogin" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+
+    <div class="feedbackpara">
+        <hr>
+        <div class="feedbackp1">
+           {{feedback["p1"]}}
+        </div>
+        <div class="feedbackp2">
+        -{{feedback["p2"]}}
+        </div>
+        <hr>
+    </div>
+    <div class="feedback">
+        <form class="feedbackbox" action="/feedback" method="post">
+            <table cellspacing="20">
+                <!-- cellpadding="10" -->
+                <div class="feedbackname">
+                    <tr>
+                        <td>
+                            <label for="username">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="username" name="name" placeholder="Enter Name ">
+                        </td>
+                    </tr>
+                </div>
+                <div class="feedbackemail">
+                    <tr>
+                        <td>
+                            <label for="email">E-Mail Id:</label>
+
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email" placeholder="Enter Email id">
+                        </td>
+                    </tr>
+                </div>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+
+                        <div class="feedrange">
+                            <div id="VeryBed">
+                                <div>🤬</div>
+                                <div id="VeryBedword">Very Bed</div>
+                            </div>
+                            <div id="Bed">
+                                <div>😡</div>
+                                <div id="Bedword">Bed</div>
+                            </div>
+                            <div id="Good">
+                                <div>😀</div>
+                                <div id="Goodword">Good</div>
+                            </div>
+                            <div id="Nice">
+                                <div>🥰</div>
+                                <div id="Niceword">Nice </div>
+                            </div>
+                            <div id="VeryGood">
+                                <div>😍</div>
+                                <div id="VeryGoodword">Very Good</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="text" name="feedback" id="feed">
+                    </td>
+                </tr>
+                <div class="feedbackword">
+                    <tr>
+                        <td>
+                            <label for="givefeed">Feedback</label>
+                        </td>
+                        <td>
+                            <textarea name="feedbackword" id="givefeed" cols="30" rows="10" placeholder="Give your feedback"></textarea>
+                        </td>
+                    </tr>
+
+                </div>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <div class="submitbtn">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </td>
+                </tr>
+
+                <hr>
+            </table>
+        </form>
+    </div>
+
+        <footer class="footer font">
+            <div class="footerword">{{para1["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+    <script src="{{ url_for('static', filename="feedback.js") }}"></script>
+</body>
+
+</html>

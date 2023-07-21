@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/addlogin" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+    <div id="name">
+        <h1>{{college["name"]}}</h1>
+        <h3>{{college["add"]}}</h3>
+    </div>
+
+    <div class="wordbox">
+        <div class="words">
+            <div class="font word">{{point["p1"]}}</div>
+            <div class="font word">{{point["p2"]}}</div>
+            <div class="font word">{{point["p3"]}}</div>
+            <div class="font word">{{point["p4"]}}</div>
+            <div class="font word">{{point["p5"]}}</div>
+        </div>
+    </div>
+    <div class="imgbox">
+        <div class="imgs" id="imgs">
+            <img src="{{ url_for('static', filename='1.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='2.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='3.jpg') }}" alt="">
+            <img src="{{ url_for('static', filename='4.jpg') }}" alt="">
+        </div>
+    </div>
+    <div class="wordbox marginb">
+        <div class="words">
+            <div class="font word">{{point["p6"]}}</div>
+            <div class="font word">{{point["p7"]}}</div>
+            <div class="font word">{{point["p8"]}}</div>
+            <div class="font word">{{point["p9"]}}</div>
+            <div class="font word">{{point["p10"]}}</div>
+        </div>
+    </div>
+    <div class="paragraph">
+        <div class="para1">
+            <img src="{{ url_for('static', filename='5.jpg') }}" alt="">
+            <p>
+                {{para["para1"]}}
+            </p>
+        </div>
+        <div class="para2">
+            <p>
+                {{para["para2"]}}
+            </p>
+            <img src="{{ url_for('static', filename='6.jpg') }}" alt="">
+        </div>
+    </div>
+    <div class="blog">
+        <hr>
+        <div class="bloghead">{{para["para3"]}}</div>
+        <hr>
+        <div class="blogbox">
+            <div class="subblogbox">
+                <div class="blogbtn">
+                    <a href="/admin1" class="font">Login</a>
+                </div>
+                {% for posts in post%}
+                <div class="subbloghead">{{posts.title}}
+                </div>
+                <div class="subblogcon">{{posts.content}}
+                    <div class="subblogdate">{{posts.date}}</div>
+                    <div class="subblogname">-{{posts.name}}</div>
+                    {% endfor %}
+                </div>
+                <div class="blogbtn">
+                    <a href="{{prev}}" class="font">⇚Prev</a>
+                    <a href="{{next}}" class="font next">Next⇛</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer font">
+            <div class="footerword">{{para["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+</body>
+
+</html>

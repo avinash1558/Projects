@@ -1,0 +1,74 @@
+        .meanmenu::before {
+            height: 2.5rem;
+        }
+        
+        .meanmenu {
+            height: 2.5rem;
+            width: 84%;
+        }
+        
+        .icon img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+        
+        .search {
+            font-size: 1.0rem;
+            height: 1.8rem;
+            width: 100%;
+        }
+        
+        .menubtn {
+            left: 8rem;
+        }
+        
+        .searchbtn {
+            height: 2rem;
+        }
+        
+        #name {
+            width: 87rem;
+        }
+        
+        .wordbox {
+            width: 87rem;
+        }
+        
+        .imgbox {
+            margin: 0px 0rem;
+        }
+        
+        .menupoint {
+            font-size: 1.0rem;
+        }
+        
+        .blog {
+            width: 82rem;
+        }
+        
+        .paragraph {
+            width: 80rem;
+        }
+        
+        .footer {
+            height: 2.5rem;
+            width: 88rem;
+        }
+        
+        .footerword {
+            font-size: 1rem;
+        }
+        
+        .footerimg a img {
+            width: 2.5rem;
+            margin-top: 0px;
+            height: 2.5rem;
+        }
+        
+        #name h1 {
+            margin-left: -9 rem;
+        }
+        
+        #name h3 {
+            margin-left: -9 rem;
+        }

@@ -1,0 +1,476 @@
+        /* utility */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+        .font {
+            font-family: 'Limelight', cursive;
+            color: rgb(248, 247, 247);
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(139, 224, 216);
+            /* width: 10%; */
+        }
+        /* mean menu of web site */
+        
+        .meanmenu {
+            z-index: 3;
+            display: flex;
+            position: fixed;
+            height: 3.5rem;
+            width: 84%;
+        }
+        
+        .meanmenu::before {
+            content: "";
+            position: fixed;
+            height: 3.5rem;
+            width: 100%;
+            background-color: black;
+            border-radius: 1rem;
+            opacity: 1;
+            z-index: 2;
+        }
+        
+        .icon img {
+            z-index: 3;
+            margin-left: 1rem;
+            border-radius: 6rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+        
+        .menupoint {
+            z-index: 3;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: center;
+            width: 80%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .menubtn {
+            z-index: 3;
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            align-items: center;
+            position: relative;
+            left: 8rem;
+        }
+        
+        .search {
+            background-color: whitesmoke;
+            font-size: 1.3rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+        }
+        
+        .point {
+            margin-right: 1rem;
+        }
+        
+        .searchbtn {
+            width: 6rem;
+            height: 3rem;
+            font-size: 1.4rem;
+            text-align: center;
+            margin-left: 0.3rem;
+            border-radius: 0.5rem;
+            background-color: tomato;
+        }
+        
+        .icon {
+            z-index: 3;
+        }
+        
+        .searchbtn:hover {
+            background-color: rgb(223, 210, 208);
+        }
+        
+        .point a:hover {
+            border-radius: 0.5rem;
+            background-color: white;
+            color: black;
+        }
+        /* sub-menu */
+        
+        .submenu1 {
+            width: 8rem;
+            margin-top: -0.3rem;
+            /* position: absolute; */
+            display: none;
+            margin-left: -2.5rem;
+            background-color: black;
+        }
+        
+        .point:hover .submenu1 {
+            display: block;
+            position: absolute;
+        }
+        
+        .point:hover .submenu1 li {
+            display: block;
+        }
+        
+        .submenu2 {
+            width: 8rem;
+            margin-top: -0.3rem;
+            /* position: absolute; */
+            display: none;
+            margin-left: -2.5rem;
+            background-color: black;
+        }
+        
+        .point:hover .submenu2 {
+            display: block;
+            position: absolute;
+        }
+        
+        .point:hover .submenu2 li {
+            display: block;
+        }
+        
+        .marg {
+            margin-top: 1.3rem;
+        }
+        
+        .ssmenu1 {
+            margin-left: 7rem;
+            background: black;
+            width: 8rem;
+            margin-top: -1.7rem;
+            display: none;
+        }
+        
+        .marg:hover .ssmenu1 {
+            position: absolute;
+            display: block;
+        }
+        
+        .marg:hover .ssmenu1 li {
+            /* position: absolute; */
+            display: block;
+        }
+        /* college name */
+        
+        #name {
+            z-index: -1;
+            position: relative;
+            top: 4.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top: 3px yellow solid;
+            border-bottom: 3px yellow solid;
+            background-color: #db1515;
+        }
+        
+        #name h1 {
+            margin: 0.8rem;
+        }
+        
+        #name h3 {
+            margin: 0.5rem;
+        }
+        
+        .footer {
+            display: flex;
+            background: black;
+            height: 70px;
+            position: relative;
+            top: 300px;
+        }
+        
+        .footerword {
+            font-size: 30px;
+            width: 1404px;
+            text-align: center;
+            margin: auto;
+            /* height: 372px; */
+        }
+        
+        .footerimg {
+            display: flex;
+        }
+        
+        .footerimg a img {
+            margin: 0px 13px;
+            margin-top: 5px;
+            border-radius: 30px;
+            width: 60px;
+            height: 60px;
+        }
+        /* img in home */
+        
+        .imgbox {
+            height: 500px;
+            width: 1360px;
+            overflow: hidden;
+            /* margin-left: 300px; */
+            /* margin-top: 150px; */
+        }
+        
+        @keyframes roll {
+            0% {
+                left: 0px;
+            }
+            10% {
+                left: 0px;
+            }
+            20% {
+                left: 1360px;
+            }
+            30% {
+                left: 1360px;
+            }
+            40% {
+                left: 2720px;
+            }
+            50% {
+                left: 2720px;
+            }
+            60% {
+                left: 4080px;
+            }
+            70% {
+                left: 4080px;
+            }
+            80% {
+                left: 2720px;
+            }
+            90% {
+                left: 1360px;
+            }
+            100% {
+                left: 0px;
+            }
+        }
+        
+        .imgs {
+            /* display: flex; */
+            z-index: -1;
+            position: relative;
+            width: 5440px;
+            left: 800px;
+            margin: 0 0 0 -4080px;
+            animation-name: roll;
+            animation-duration: 33s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        
+        .imgs img {
+            height: 500px;
+            width: 1360px;
+            position: relative;
+            float: left;
+        }
+        /* words rolling */
+        
+        .wordbox {
+            /* z-index: -2; */
+            overflow: hidden;
+            height: 40px;
+            width: 100%;
+            margin-top: 100px;
+            background: red;
+            border: 4px solid yellow;
+        }
+        
+        .words {
+            display: flex;
+            left: 800px;
+            width: 5000px;
+            margin: 0 0 0 -4000px;
+            animation-name: rolling;
+            animation-duration: 33s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        
+        .marginb {
+            margin-top: 0px;
+        }
+        
+        .word {
+            /* z-index: -1; */
+            /* margin-top: ; */
+            position: relative;
+            float: left;
+            border: 4px solid yellow;
+            font-size: 32px;
+            height: 33px;
+            width: 1000px;
+        }
+        
+        @keyframes rolling {
+            0% {
+                left: 0px;
+            }
+            20% {
+                left: 1000px;
+            }
+            40% {
+                left: 2000px;
+            }
+            60% {
+                left: 3000px;
+            }
+            80% {
+                left: 4000px;
+            }
+            100% {
+                left: 5000px;
+            }
+        }
+        /* blog */
+        
+        .blog {
+            margin-top: 65px;
+        }
+        
+        .blogbox {
+            margin: 50px 0px;
+        }
+        
+        .bloghead {
+            font-size: 50px;
+            margin: auto;
+            display: block;
+            width: 400px;
+        }
+        
+        .subblogbox {
+            width: 1100px;
+            margin: auto;
+        }
+        
+        .subbloghead {
+            font-size: 35px;
+            /* margin-left: 20px; */
+            margin-bottom: 20px;
+        }
+        
+        .subblogcon {
+            font-size: 25px;
+        }
+        
+        .subblogdate {
+            margin: 10px 0px;
+            font-size: 25px;
+            width: 324px;
+        }
+        
+        .subblogname {
+            float: right;
+            font-size: 25px;
+            font-style: italic;
+        }
+        
+        .blogbtn {
+            width: 1100px;
+            margin: 60px auto;
+        }
+        
+        .blogbtn a {
+            border-radius: 4px;
+            font-size: 30px;
+            width: 101px;
+            background: rgb(28, 167, 167);
+            border: 2px solid rgb(6, 131, 189);
+        }
+        
+        .blogbtn a:hover {
+            background-color: tomato;
+        }
+        
+        .next {
+            float: right;
+        }
+        
+        .paragraph {
+            margin: 65px auto;
+            width: 1200px;
+        }
+        
+        .para1 {
+            display: flex;
+            margin: 26px 0px
+        }
+        
+        .para2 {
+            display: flex;
+        }
+        
+        .para1 p {
+            /* margin: 3px 30px; */
+            margin-top: 3px;
+            margin-left: 30px;
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+        
+        .para2 p {
+            margin-top: 3px;
+            margin-left: 13px;
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+        
+        .div a {
+            font-size: 30px;
+            background: tomato;
+            border-radius: 6px;
+            border: 4px solid yellow;
+        }
+        
+        .div a:hover {
+            color: black;
+            background: rgb(241, 240, 239);
+            border: 4px solid rgb(7, 7, 7);
+        }
+        
+        .div {
+            position: relative;
+            top: 150px;
+            left: 190px;
+        }
+        
+        .table {
+            position: relative;
+            top: 150px;
+            width: 900px;
+            margin: auto;
+            height: 100vh;
+        }
+        
+        .box tr th,
+        .box tr td {
+            border: 1px solid black;
+        }
+        
+        .box {
+            width: 100%;
+        }
+        
+        .box1 {
+            height: 40px;
+        }
+        
+        .th {
+            font-size: 31px;
+            background: tomato;
+            border: 3px solid yellow;
+            border-radius: 6px;
+        }

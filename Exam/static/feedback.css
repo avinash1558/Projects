@@ -1,0 +1,117 @@
+.feedback {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 118px;
+}
+
+.feedbackbox {
+    height: 700px;
+    display: flex;
+    width: 1000px;
+    margin: 0px auto;
+    flex-direction: column;
+}
+
+.feedrange {
+    display: flex;
+    justify-content: space-between;
+    width: 289px;
+    position: relative;
+    left: -200px;
+    /* align-items: center; */
+    margin: auto;
+}
+
+.feedrange div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.feedbackemail,
+.feedbackename,
+.feedbackword {
+    display: flex;
+    margin: 20px 0px;
+}
+
+#email,
+#username {
+    width: 650px;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#feed {
+    width: 650px;
+    height: 40px;
+    font-size: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #8be0d8;
+    border-bottom: 3px solid black;
+}
+
+label {
+    font-size: 35px;
+}
+
+textarea {
+    border-radius: 10px;
+    font-size: 35px;
+    width: 650px;
+    height: 180px;
+    resize: none;
+}
+
+.submitbtn input {
+    width: 139px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: rgb(38, 131, 224);
+}
+
+.submitbtn input[type="reset"] {
+    position: relative;
+    right: 100px;
+    float: right;
+    right: 153px;
+}
+
+tr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* feedback para */
+
+.feedbackpara {
+    position: relative;
+    top: 127px;
+    font-size: 30px;
+    margin: auto;
+    width: 1126px;
+}
+
+.feedbackp2 {
+    position: relative;
+    left: 966px;
+    display: block;
+}
+
+.submitbtn input:hover {
+    background-color: burlywood;
+}
+
+.error {
+    border: 6px solid red;
+}

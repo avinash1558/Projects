@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='contact.css') }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/addlogin" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+
+    <div class="contact">
+        <hr>
+        <div class="contact1">
+            <img src="{{ url_for('static', filename="c1.jpg") }}" alt="">
+            <div class="c1">
+                <div class="h1">{{c1["p1"]}}</div>
+                <div>{{c1["p2"]}}</div>
+                <div>Contact-{{c1["p3"]}}</div>
+                <div>Email-{{c1["p4"]}}</div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact2">
+
+            <div class="c2">
+                <div class="h1">{{c2["p1"]}}.</div>
+                <div>{{c2["p2"]}}</div>
+                <div>Contact-{{c2["p3"]}}</div>
+                <div>Email-{{c2["p4"]}}</div>
+            </div>
+            <img src="{{ url_for('static', filename="c2.jpg") }}" alt="">
+        </div>
+        <hr>
+        <div class="contact3">
+            <img src="{{ url_for('static', filename="c3.jpg") }}" alt="">
+            <div class="c3">
+                <div class="h1">{{c3["p1"]}}</div>
+                <div>{{c3["p2"]}}</div>
+                <div>Contact-{{c3["p3"]}}</div>
+                <div>Email-{{c3["p4"]}}</div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact4">
+
+            <div class="c4">
+                <div class="h1">{{c4["p1"]}}</div>
+                <div>{{c4["p2"]}}</div>
+                <div>Contact-{{c4["p3"]}}</div>
+                <div>Email-{{c4["p4"]}}</div>
+            </div>
+            <img src="{{ url_for('static', filename="c4.jpg") }}" alt="">
+        </div>
+        <hr>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15087.472391330379!2d72.86047567067295!3d19.025533079494625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf30b033c95f%3A0xed6a913c37dc832!2sAntop%20Hill%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1636274057073!5m2!1sen!2sin"
+            width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+        <footer class="footer font">
+            <div class="footerword">{{para1["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+</body>
+
+</html>

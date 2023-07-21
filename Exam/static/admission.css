@@ -1,0 +1,319 @@
+#admission {
+    position: relative;
+    top: 100px;
+    display: flex;
+}
+
+.admissionicon {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+}
+
+#addbtn2 {
+    display: none;
+}
+
+.admissionicon div img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.admissionbox {
+    width: 100vw;
+}
+
+.registration,
+.personal,
+.location,
+.parent,
+.guardian,
+.Document {
+    background: white;
+    border-radius: 10px;
+    margin: 20px 2px;
+}
+
+.registrationhead,
+.personalhead,
+.locationhead,
+.parenthead,
+.guardianhead,
+.Documenthead {
+    background: rebeccapurple;
+    border: 4px solid yellow;
+    font-size: 50px;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.registrationhead div,
+.personalhead div,
+.locationhead div,
+.parenthead div,
+.guardianhead div,
+.Documenthead div {
+    margin-left: 15px;
+}
+
+#addh1 {
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    background-color: chocolate;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.admissionpoint div {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.admissionpoint {
+    background: black;
+    color: white;
+    border-right: 5px solid yellow;
+    border-left: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+}
+
+.addbtn button {
+    font-size: 30px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+}
+
+.addbtn button:hover {
+    background: white;
+    color: black;
+}
+
+.registrationinfo,
+.personalinfo,
+.locationinfo,
+.parentinfo,
+.guardianinfo,
+.Documentinfo {
+    width: 80vw;
+    height: 100vh;
+    margin: auto
+}
+
+.personal,
+.location,
+.parent,
+.guardian,
+.Document {
+    display: none;
+}
+
+.Documentinfo {
+    height: 130vh;
+}
+
+.registrationinfo table,
+.personalinfo table,
+.locationinfo table,
+.parentinfo table,
+.guardianinfo table {
+    width: 75vw;
+    height: 50vh;
+    margin: 15px auto;
+}
+
+
+/* guardianinfo */
+
+.registrationinfo table tr td div,
+.personalinfo table tr td div,
+.locationinfo table tr td div,
+.parentinfo table tr td div,
+.guardianinfo table tr td div {
+    font-size: 35px;
+}
+
+.registrationinfo table tr td select,
+.personalinfo table tr td select,
+.locationinfo table tr td select,
+.parentinfo table tr td select,
+.guardianinfo table tr td select {
+    width: 300px;
+    border-radius: 6px;
+    height: 47px;
+    font-size: 32px;
+}
+
+.parent1 {
+    height: 175vh;
+}
+
+.inputsmall {
+    border-radius: 6px;
+    width: 293px;
+    height: 40px;
+    font-size: 32px;
+}
+
+.inputlong {
+    font-size: 32px;
+    height: 40px;
+    width: 817px;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.inputslong {
+    font-size: 32px;
+    height: 40px;
+    width: 968px;
+    border-radius: 6px;
+}
+
+.inputlong1 {
+    height: 40px;
+    width: 640px;
+}
+
+.titlelong {
+    margin-top: -42px;
+}
+
+.Documentinfo div {
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.class div {
+    width: 300px;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 33px;
+}
+
+input[type="file"] {
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.d1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.class {
+    display: flex;
+}
+
+.class div div img {
+    width: 250px;
+    height: 220px;
+}
+
+.class div div {
+    border: 3px solid black;
+    border-radius: 6px;
+    height: 220px;
+    width: 250px;
+}
+
+.subbtn1 {
+    width: 650px;
+    margin: 150px auto;
+}
+
+.subbtn2 {
+    width: 650px;
+    margin: 160px auto;
+}
+
+.subbtn3 {
+    width: 650px;
+    margin: 160px auto;
+}
+
+.subbtn4 {
+    width: 650px;
+    margin: 160px auto;
+}
+
+.subbtn5 {
+    width: 650px;
+    margin: 160px auto;
+}
+
+.subbtn6 {
+    width: 650px;
+    margin: 160px auto;
+}
+
+.subbtn11,
+.subbtn12,
+.subbtn21,
+.subbtn22,
+.subbtn31,
+.subbtn32,
+.subbtn41,
+.subbtn42,
+.subbtn51,
+.subbtn52,
+.subbtn61,
+.subbtn62 {
+    font-size: 36px;
+    width: 139px;
+    height: 113px;
+    background: tomato;
+    border-radius: 57px;
+}
+
+.subbtn611 {
+    position: absolute;
+    margin: 70px 260px;
+    height: 62px;
+    font-size: 35px;
+    border-radius: 12px;
+    background: tomato;
+}
+
+.subbtn22,
+.subbtn32,
+.subbtn42,
+.subbtn52,
+.subbtn62,
+.subbtn12 {
+    position: relative;
+    left: 425px;
+}
+
+.registrationinfo {
+    height: 110vh;
+}
+
+.personalinfo {
+    height: 120vh;
+}
+
+.locationinfo {
+    height: 120vh;
+}
+
+.parentinfo {
+    height: 110vh;
+}
+
+.guardianinfo {
+    height: 120vh;
+}
+
+.Documentinfo {
+    height: 140vh;
+}
+
+.btn1 {
+    margin: 20px 41px;
+}

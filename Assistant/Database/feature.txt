@@ -1,0 +1,75 @@
+1 joke =
+2 news =
+3 open app =
+4 close app =
+5 open google / sreach on =
+6 mail open =
+7 open site =
+8 send whatsapp message =
+9 pdf to audio =
+10 text reader =
+11 note pad create reader = 
+12 search on youtube 20 youtube automation 
+13 play music =
+14 system process =
+15 communication and question   =
+16 handwriting converter =
+17 alarm for people
+18 swith tab =
+19 chrome automation 
+21 location =
+22 battery =
+23 net speed =
+24 volume up / down / mute =
+25 distance of location 
+26 how to mode =
+27 code for specific an eassy
+28 face recognization =
+29 clap recognization =
+
+x		elif "camera" in query or "take a photo" in query:
+			ec.capture(0, "Jarvis Camera ", "img.jpg")
+
+x	    elif 'empty recycle bin' in query:
+			winshell.recycle_bin().empty(confirm = False, show_progress = False, sound = True)
+			speak("Recycle Bin Recycled")
+
+x		elif "send message " in query:
+				# You need to create an account on Twilio to use this service
+				account_sid = 'Account Sid key'
+				auth_token = 'Auth token'
+				client = Client(account_sid, auth_token)
+
+				message = client.messages \
+								.create(
+									body = takeCommand(),
+									from_='Sender No',
+									to ='Receiver No'
+								)
+
+				print(message.sid)
+
+x		elif "weather" in query:
+			
+			# Google Open weather website
+			# to get API of Open weather
+			api_key = "Api key"
+			base_url = "http://api.openweathermap.org / data / 2.5 / weather?"
+			speak(" City name ")
+			print("City name : ")
+			city_name = takeCommand()
+			complete_url = base_url + "appid =" + api_key + "&q =" + city_name
+			response = requests.get(complete_url)
+			x = response.json()
+			
+			if x["code"] != "404":
+				y = x["main"]
+				current_temperature = y["temp"]
+				current_pressure = y["pressure"]
+				current_humidiy = y["humidity"]
+				z = x["weather"]
+				weather_description = z[0]["description"]
+				print(" Temperature (in kelvin unit) = " +str(current_temperature)+"\n atmospheric pressure (in hPa unit) ="+str(current_pressure) +"\n humidity (in percentage) = " +str(current_humidiy) +"\n description = " +str(weather_description))
+			
+			else:
+				speak(" City Not Found ")

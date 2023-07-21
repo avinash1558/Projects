@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename="admission.css") }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/addlogin" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+    <div class="admission" id="admission">
+        <div class="admissionpoint" id="admissionpoint">
+            <div id="addh1">Admission Form</div>
+            <div id="addhh1">Registration Information</div>
+            <hr>
+            <div id="addh2">Personal Information</div>
+            <hr>
+            <div id="addh3">Location</div>
+            <hr>
+            <div id="addh4">Parent Information</div>
+            <hr>
+            <div id="addh5">Guardian Information</div>
+            <hr>
+            <div id="addh6">Document</div>
+            <hr>
+        </div>
+        <div class="addbtn" id="addbtn">
+            <button id="addbtn1">⇇</button>
+            <button id="addbtn2">⇉</button>
+        </div>
+
+        <div class="admissionbox">
+            <div class="admissionicon">
+                <div><img id="add1" src="{{url_for('static',filename="add1.jpg")}}" alt=""></div>
+                <div id="addhhh1"><img src="{{url_for('static',filename="logo.jpg")}}" alt=""></div>
+                <div id="addhh2"><img src="{{url_for('static',filename="add3.jpg")}}" alt=""></div>
+                <div id="addhh3"><img src="{{url_for('static',filename="add4.jpg")}}" alt=""></div>
+                <div id="addhh4"><img src="{{url_for('static',filename="add5.jpg")}}" alt=""></div>
+                <div id="addhh5"><img src="{{url_for('static',filename="add6.jpg")}}" alt=""></div>
+                <div id="addhh6"><img src="{{url_for('static',filename="add7.jpg")}}" alt=""></div>
+                <div><img id="add2" src="{{url_for('static',filename="add2.jpg")}}" alt=""></div>
+            </div>
+           <form action="/update" method="post">
+            <div class="registration" id="registration">
+                <div class="registrationhead" id="registrationhead">
+                    <div>Registration</div>
+                </div>
+                <div class="registrationinfo" id="registrationinfo">
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    Admission Type:
+                                </div>
+                                <select name="admissiontype" id="admissiontype" value={{post.admissiontype}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>
+                                    Section:
+                                </div>
+                                <select name="section" id="section" value={{post.section}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>
+                                    Class:
+                                </div>
+                                <select name="class1" id="class" value={{post.class}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> Division:
+                                </div>
+                                <select name="division" id="division" value={{post.division}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div> Fee category:</div>
+                                <select name="fee" id="fee" value={{post.fee}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>Caste:
+                                </div>
+                                <select name="caste" id="caste" value={{post.caste}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div> Inhouse:</div>
+                                <select name="inhouse" id="inhouse"  value={{post.inhouse}}>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div>
+                                    Board:
+                                </div>
+                                <input type="text" class="board inputsmall" id="board" name="board"  value={{post.board}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Addaar No:
+                                </div>
+                                <input type="text" class="addaar inputsmall" id="addaar" name="adhar" value={{post.adhar}}>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+            <div class="personal" id="personal">
+                <div class="personalhead" id="personalhead">
+                    <div>Personal</div>
+                </div>
+                <div class="personalinfo" id="personalinfo">
+                    <table>
+                        <tr>
+                            <td colspan="1">
+                                <div class="titlelong">
+                                    Student name:
+                                </div>
+                                <input type="text" class="studentname inputlong inputlong1" id="studentname" name="studentname" value={{post.studentname}}>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <div>
+                                    Gender:
+                                </div>
+                                <select name="gender" id="gender" value={{post.gender}}>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <div class="titlelong">
+                                    Student email:
+                                </div>
+                                <input type="text" class="studentemail inputlong inputlong1" id="studentemail" name="studentemail" value={{post.studentemail}}>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <div>
+                                    Student mobile:
+                                </div>
+                                <input type="text" class="studentmobile inputsmall" id="studentmobile" name="studentmobile" value={{post.studentmobile}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    Birthdate:
+                                </div>
+                                <input type="date" class="birthdate inputsmall" id="birthdate" name="birthdate" value={{post.birthdate}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Birthplace:
+                                </div>
+                                <input type="text" class="birthplace inputsmall" id="birthplace" name="birthplace" value={{post.birthplace}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Natinality:
+                                </div>
+                                <select name="natinality" id="natinality" value={{post.natinality}}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    Marital statu:
+                                </div>
+                                <select name="maritalstatu" id="maritalstatu" value={{post.maritalstatu}}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </td>
+                            <td>
+                                <div>
+                                    Mother tongue:
+                                </div>
+                                <select name="mothertongue" id="mothertongue" value={{post.mothertongue}}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </td>
+                            <td>
+                                <div>
+                                    Religion:
+                                </div>
+                                <select name="religion" id="religion" value={{post.religion}}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+            <div class="location" id="location">
+                <div class="locationhead" id="locationhead">
+                    <div>
+                        Location
+                    </div>
+                </div>
+                <div class="locationinfo" id="locationinfo">
+                    <table>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 1:
+                                </div>
+                                <input type="text" class="address1 inputslong" id="address1" name="address1"  value={{post.address1}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 2:
+                                </div>
+                                <input type="text" class="address2 inputslong" id="address2" name="address2" value={{post.address2}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    Location:
+                                </div>
+                                <input type="text" class="location1 inputsmall" id="location1" name="location" value={{post.location}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Taluka:
+                                </div>
+                                <input type="text" class="taluka inputsmall" id="taluka" name="taluka" value={{post.taluka}}>
+                            </td>
+                            <td>
+                                <div>
+                                    District:
+                                </div>
+                                <input type="text" class="district inputsmall" id="district" name="district" value={{post.district}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    State:
+                                </div>
+                                <input type="text" class="state inputsmall" id="state" name="state" value={{post.state}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Country:
+                                </div>
+                                <input type="text" class="country inputsmall" id="country" name="country" value={{post.country}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Pincode:
+                                </div>
+                                <input type="text" class="pincode inputsmall" id="pincode" name="pincode" value={{post.pincode}}>
+                            </td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            </div>
+            <div class="parent parent1" id="parent">
+                <div class="parenthead" id="parenthead">
+                    <div>Parent Information</div>
+                </div>
+                <div class="parentinfo " id="parentinfo">
+                    <table>
+                        <tr>
+                            <td colspan="3" class="titleslong">
+                                <div>
+                                    Father name:
+                                </div>
+                                <input type="text" class="fathername inputslong" id="fathername" name="fathername" value={{post.fathername}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="titleslong">
+                                <div>
+                                    Mother name:
+                                </div>
+                                <input type="text" class="mothername inputslong" id="mothername" name="address2" value={{post.mothername}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <div class="titlelong">
+                                    Parent email:
+                                </div>
+                                <input type="text" class="parentemail inputlong inputlong1" id="parentemail" name="parentemail" value={{post.parentemail}}>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <div>
+                                    Parent mobile:
+                                </div>
+                                <input type="text" class="parentmobile inputsmall" id="parentmobile" name="parentmobile" value={{post.parentmobile}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 1:
+                                </div>
+                                <input type="text" class="parentaddress1 inputslong" id="parentaddress1" name="parentaddress1" value={{post.parentaddress1}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 2:
+                                </div>
+                                <input type="text" class="parentaddress2 inputslong" id="parentaddress2" name="parentaddress2" value={{post.parentaddress2}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    Location:
+                                </div>
+                                <input type="text" class="parentlocation inputsmall" id="parentlocation" name="parentlocation" value={{post.parentlocation}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Taluka:
+                                </div>
+                                <input type="text" class="parenttaluka inputsmall" id="parenttaluka" name="parenttaluka" value={{post.parenttaluka}}>
+                            </td>
+                            <td>
+                                <div>
+                                    District:
+                                </div>
+                                <input type="text" class="parentdistrict inputsmall" id="parentdistrict" name="parentdistrict" value={{post.parentdistrict}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    State:
+                                </div>
+                                <input type="text" class="parentstate inputsmall" id="parentstate" name="parentstate" value={{post.parentstate}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Country:
+                                </div>
+                                <input type="text" class="parentcountry inputsmall" id="parentcountry" name="parentcountry"  value={{post.parentcountry}}>
+                            </td>
+                            <td>
+                                <div>
+                                    Pincode:
+                                </div>
+                                <input type="text" class="parentpincode inputsmall" id="parentpincode" name="parentpincode"  value={{post.parentpincode}}>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+            <div class="guardian" id="guardian">
+                <div class="guardianhead" id="guardianhead">
+                    <div>Guardian</div>
+                </div>
+                <div class="guardianinfo" id="guardianinfo">
+                    <table>
+                        <tr>
+                            <td colspan="1">
+                                <div class="titlelong">
+                                    G.Name:</div>
+                                <input type="text" class="guardianname inputlong inputlong1" id="guardianname" name="guardianname"  value={{post.guardianname}}>
+                            </td>
+                            <td style="width:640px;"></td>
+                            <td>
+                                <div>
+                                    Relation:
+                                </div>
+                                <input type="text" class="relation inputsmall" id="relation" name="relation" value={{post.relation}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <div class="titlelong">
+                                    Email:
+                                </div>
+                                <input type="text" class="guardianemail inputlong inputlong1" id="guardianemail" name="guardianemail" value={{post.guardianemail}}>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div>
+                                    Mobile:
+                                </div>
+                                <input type="text" class="guardianmobile inputsmall" id="guardianmobile" name="guardianmobile" value={{post.guardianmobile}}>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 1:
+                                </div>
+                                <input type="text" class="guardianaddress1 inputslong marg" id="guardianaddress1" name="guardianaddress1" value={{post.guardianaddress1}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="titleslong">
+                                    Address line 2:
+                                </div>
+                                <input type="text" class="guardianaddress2 inputslong marg" id="guardianaddress2" name="guardianaddress2" value={{post.guardianaddress2}}>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                    
+                </div>
+            </div>
+            <div class="Document" id="Document">
+                <div class="Documenthead" id="Documenthead">
+                    <div>Document</div>
+                </div>
+                <div class="Documentinfo" id="Documentinfo">
+                    <div class="d1">
+                        <div>
+                            <input type="checkbox" id="c1" name="c1">
+                            <label for="c1">{{admission["p1"]}}</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c2" name="c2">
+                            <label for="c2">{{admission["p2"]}}</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c3" name="c3">
+                            <label for="c3">{{admission["p3"]}}</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c4" name="c4">
+                            <label for="c4">{{admission["p4"]}}</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c5" name="c5">
+                            <label for="c5">{{admission["p5"]}}</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c6" name="c6">
+                            <label for="c6">{{admission["p6"]}}</label>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div>
+                            <input type="file">
+                            <div>
+                                <!-- <img src="img/add1.jpg" alt=""> -->
+                            </div>
+                        </div>
+                        <div>
+
+                            <input type="file">
+                            <div>
+                                <!-- <img src="img/add4.jpg" alt=""> -->
+                            </div>
+                        </div>
+                        <div>
+
+                            <input type="file">
+                            <div>
+                                <!-- <img src="img/add2.jpg" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <input type="Submit" class="subbtn611" value="Submit">
+
+                </div>
+            </div>
+        </form>
+
+        </div>
+    </div>
+     <footer class="footer font">
+            <div class="footerword">{{para1["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+    <script src="{{ url_for('static', filename="admission.js") }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{{college["title"]}}</title>
+
+    <link href="{{ url_for('static', filename='Exam1.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='home.css') }}" rel="stylesheet">
+    <link media="screen and (max-width:1300px)" href="{{url_for('static', filename='media.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="meanmenu">
+        <div class="icon">
+            <img src="{{url_for('static',filename="logo.jpg")}}" alt="Wait">
+        </div>
+        <ul class="menupoint" type="none">
+            <li class="point active" id="li">
+                <a href="/" class="font">Home</a>
+                <ul class="submenu1" type="none">
+                    <li class="marg"><a href="" class="font"> Details</a>
+                        <ul class="ssmenu1" type="none">
+                            <li><a href="/detail" class="font">Detail</a></li>
+                            <li><a href="/admin1" class="font">Login</a></li>
+                            <li><a href="/feedback" class="font">Feedback 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/admission1" class="font">Add</a></li>
+                    <li><a href="" class="font"> Exam </a></li>
+                    <li><a href="/contact" class="font">Contact us </a></li>
+                    <li><a href="/feedback" class="font"> Feedback </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/detail" class="font">Details</a>
+            </li>
+            <li class="point"><a href="/admission1" class="font">Admission</a>
+            <ul class="submenu1" type="none">
+                    <li><a href="/admission1" class="font">Form</a></li>
+                    <li><a href="/admission2" class="font"> Update </a></li>
+                </ul>
+            </li>
+            <li class="point"><a href="/studentlogin" class="font">Exam</a>
+                <ul class="submenu2" type="none">
+                    <li><a href="/teacherlogin" class="font"> Teachers</a></li>
+                    <li><a href="/studentlogin" class="font"> Students</a></li>
+
+                </ul>
+            </li>
+            <li class="point"><a href="/contact" class="font">Contact us</a></li>
+            <li class="point"><a href="/feedback" class="font">Feedback</a></li>
+        </ul>
+        <div class="menubtn" class="font">
+            <input class="search" type="text">
+            <button class="searchbtn">Search</button>
+        </div>
+    </div>
+    <div class="examdiv" id="examdiv">
+        <div id="inputpoint">
+            <div id="addh1" class="addh1">Question</div>
+            <div id="t1">Q1</div>
+
+            <div id="t2">Q2</div>
+
+            <div id="t3">Q3</div>
+
+            <div id="t4">Q4</div>
+
+            <div id="t5">Q5</div>
+
+            <div id="t6">Q6</div>
+
+            <div id="t7">Q7</div>
+
+            <div id="t8">Q8</div>
+
+            <div id="t9">Q9</div>
+
+            <div id="t10">Q10</div>
+
+            <div id="t11">Q11</div>
+
+            <div id="t12">Q12</div>
+
+            <div id="t13">Q13</div>
+
+            <div id="t14">Q14</div>
+
+            <div id="t15">Q15</div>
+
+            <div id="t16">Q16</div>
+
+            <div id="t17">Q17</div>
+
+            <div id="t18">Q18</div>
+
+            <div id="t19">Q19</div>
+
+            <div id="t20">Q20</div>
+
+            <div id="t21">Q21</div>
+
+            <div id="t22">Q22</div>
+
+            <div id="t23">Q23</div>
+
+            <div id="t24">Q24</div>
+
+            <div id="t25">Q25</div>
+
+            <div id="t26">Q26</div>
+
+            <div id="t27">Q27</div>
+
+            <div id="t28">Q28</div>
+
+            <div id="t29">Q29</div>
+
+            <div id="t30">Q30</div>
+
+            <div id="t31">Q31</div>
+
+            <div id="t32">Q32</div>
+
+            <div id="t33">Q33</div>
+
+            <div id="t34">Q34</div>
+
+            <div id="t35">Q35</div>
+
+            <div id="t36">Q36</div>
+
+            <div id="t37">Q37</div>
+
+            <div id="t38">Q38</div>
+
+            <div id="t39">Q39</div>
+
+            <div id="t40">Q40</div>
+
+            <div id="t41">Q41</div>
+
+            <div id="t42">Q42</div>
+
+            <div id="t43">Q43</div>
+
+            <div id="t44">Q44</div>
+
+            <div id="t45">Q45</div>
+
+            <div id="t46">Q46</div>
+
+            <div id="t47">Q47</div>
+
+            <div id="t48">Q48</div>
+
+            <div id="t49">Q49</div>
+
+            <div id="t50">Q50</div>
+
+        </div>
+        <div id="inputbtn">
+            <button id="inputbtn1">⇇</button><button id="inputbtn2">⇉</button>
+        </div>
+
+        <div id="inputdiv">
+            <div id="examdetail">
+                <div id="examdetail1">
+                    Subject
+                </div>
+                <div id="examdetail2">
+                    <div>
+                        div:<input type="text"> class:
+                        <input type="text">
+                    </div>
+                    <div>
+                        sub:<input type="text"> no of Q : <select name="no_of_q" id="no_of_q">
+                            <option value="20">20Q</option>
+                            <option value="50">50Q</option>
+                        </select>
+                    </div>
+                    <button id="button">Submit</button>
+                </div>
+            </div>
+            <div class="subbtn" id="subbtn">
+                <button class="subbtn1" id="subbtn11">⇚prev</button>
+                <button class="subbtn2" id="subbtn12">next⇛</button>
+            </div>
+            
+        <form class="feedbackbox" action="/teacherlogin" method="post">
+            <div class="inputbox" id="box1">
+
+                <div class="input" id="input1">
+                    <div>Q1 <input type="text" class="Q" id="inputQ1"></div>
+                    <div class="A" id="A1">
+                        <div>
+                            A <input type="text" id="A11">
+                        </div>
+                        <div>
+                            B <input type="text" id="A12"></div>
+                        <div>
+                            C <input type="text" id="A13"></div>
+                        <div>
+                            D <input type="text" id="A14"></div>
+                        <div>
+                            CR<input type="text" id="c1">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input2">
+                    <div>Q2 <input type="text" class="Q" id="inputQ2"></div>
+                    <div class="A" id="A2">
+                        <div>
+                            A <input type="text" id="A21">
+                        </div>
+                        <div>
+                            B <input type="text" id="A22"></div>
+                        <div>
+                            C <input type="text" id="A23"></div>
+                        <div>
+                            D <input type="text" id="A24"></div>
+                        <div>
+                            CR<input type="text" id="c2">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input3">
+                    <div>Q3 <input type="text" class="Q" id="inputQ3"></div>
+                    <div class="A" id="A3">
+                        <div>
+                            A <input type="text" id="A31">
+                        </div>
+                        <div>
+                            B <input type="text" id="A32"></div>
+                        <div>
+                            C <input type="text" id="A33"></div>
+                        <div>
+                            D <input type="text" id="A34"></div>
+                        <div>
+                            CR<input type="text" id="c3">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input4">
+                    <div>Q4 <input type="text" class="Q" id="inputQ4"></div>
+                    <div class="A" id="A4">
+                        <div>
+                            A <input type="text" id="A41">
+                        </div>
+                        <div>
+                            B <input type="text" id="A42"></div>
+                        <div>
+                            C <input type="text" id="A43"></div>
+                        <div>
+                            D <input type="text" id="A44"></div>
+                        <div>
+                            CR<input type="text" id="c4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box2">
+                <div class="input" id="input5">
+                    <div>Q5 <input type="text" class="Q" id="inputQ5"></div>
+                    <div class="A" id="A5">
+                        <div>
+                            A <input type="text" id="A51">
+                        </div>
+                        <div>
+                            B <input type="text" id="A52"></div>
+                        <div>
+                            C <input type="text" id="A53"></div>
+                        <div>
+                            D <input type="text" id="A54"></div>
+                        <div>
+                            CR<input type="text" id="c5">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input6">
+                    <div>Q6 <input type="text" class="Q" id="inputQ6"></div>
+                    <div class="A" id="A6">
+                        <div>
+                            A <input type="text" id="A61">
+                        </div>
+                        <div>
+                            B <input type="text" id="A62"></div>
+                        <div>
+                            C <input type="text" id="A63"></div>
+                        <div>
+                            D <input type="text" id="A64"></div>
+                        <div>
+                            CR<input type="text" id="c6">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input7">
+                    <div>Q7 <input type="text" class="Q" id="inputQ7"></div>
+                    <div class="A" id="A7">
+                        <div>
+                            A <input type="text" id="A71">
+                        </div>
+                        <div>
+                            B <input type="text" id="A72"></div>
+                        <div>
+                            C <input type="text" id="A73"></div>
+                        <div>
+                            D <input type="text" id="A74"></div>
+                        <div>
+                            CR<input type="text" id="c7">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input8">
+                    <div>Q8 <input type="text" class="Q" id="inputQ8"></div>
+                    <div class="A" id="A8">
+                        <div>
+                            A <input type="text" id="A81">
+                        </div>
+                        <div>
+                            B <input type="text" id="A82"></div>
+                        <div>
+                            C <input type="text" id="A83"></div>
+                        <div>
+                            D <input type="text" id="A84"></div>
+                        <div>
+                            CR<input type="text" id="c8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box3">
+                <div class="input" id="input9">
+                    <div>Q9 <input type="text" class="Q" id="inputQ9"></div>
+                    <div class="A" id="A9">
+                        <div>
+                            A <input type="text" id="A91">
+                        </div>
+                        <div>
+                            B <input type="text" id="A92"></div>
+                        <div>
+                            C <input type="text" id="A93"></div>
+                        <div>
+                            D <input type="text" id="A94"></div>
+                        <div>
+                            CR<input type="text" id="c9">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input10">
+                    <div>Q10 <input type="text" class="Q" id="inputQ"></div>
+                    <div class="A" id="A10">
+                        <div>
+                            A <input type="text" id="A101">
+                        </div>
+                        <div>
+                            B <input type="text" id="A102"></div>
+                        <div>
+                            C <input type="text" id="A103"></div>
+                        <div>
+                            D <input type="text" id="A104"></div>
+                        <div>
+                            CR<input type="text" id="c10">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input11">
+                    <div>Q11 <input type="text" class="Q" id="inputQ11"></div>
+                    <div class="A" id="A11">
+                        <div>
+                            A <input type="text" id="A111">
+                        </div>
+                        <div>
+                            B <input type="text" id="A112"></div>
+                        <div>
+                            C <input type="text" id="A113"></div>
+                        <div>
+                            D <input type="text" id="A114"></div>
+                        <div>
+                            CR<input type="text" id="c11">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input12">
+                    <div>Q12 <input type="text" class="Q" id="inputQ12"></div>
+                    <div class="A" id="A12">
+                        <div>
+                            A <input type="text" id="A121">
+                        </div>
+                        <div>
+                            B <input type="text" id="A122"></div>
+                        <div>
+                            C <input type="text" id="A123"></div>
+                        <div>
+                            D <input type="text" id="A124"></div>
+                        <div>
+                            CR<input type="text" id="c12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box4">
+                <div class="input" id="input13">
+                    <div>Q13 <input type="text" class="Q" id="inputQ13"></div>
+                    <div class="A" id="A13">
+                        <div>
+                            A <input type="text" id="A131">
+                        </div>
+                        <div>
+                            B <input type="text" id="A132"></div>
+                        <div>
+                            C <input type="text" id="A133"></div>
+                        <div>
+                            D <input type="text" id="A134"></div>
+                        <div>
+                            CR<input type="text" id="c13">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input14">
+                    <div>Q14 <input type="text" class="Q" id="inputQ14"></div>
+                    <div class="A" id="A14">
+                        <div>
+                            A <input type="text" id="A141">
+                        </div>
+                        <div>
+                            B <input type="text" id="A142"></div>
+                        <div>
+                            C <input type="text" id="A143"></div>
+                        <div>
+                            D <input type="text" id="A144"></div>
+                        <div>
+                            CR<input type="text" id="c14">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input15">
+                    <div>Q15 <input type="text" class="Q" id="inputQ15"></div>
+                    <div class="A" id="A15">
+                        <div>
+                            A <input type="text" id="A151">
+                        </div>
+                        <div>
+                            B <input type="text" id="A152"></div>
+                        <div>
+                            C <input type="text" id="A153"></div>
+                        <div>
+                            D <input type="text" id="A154"></div>
+                        <div>
+                            CR<input type="text" id="c15">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input16">
+                    <div>Q16 <input type="text" class="Q" id="inputQ16"></div>
+                    <div class="A" id="A16">
+                        <div>
+                            A <input type="text" id="A161">
+                        </div>
+                        <div>
+                            B <input type="text" id="A162"></div>
+                        <div>
+                            C <input type="text" id="A163"></div>
+                        <div>
+                            D <input type="text" id="A164"></div>
+                        <div>
+                            CR<input type="text" id="c16">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box5">
+                <div class="input" id="input17">
+                    <div>Q17 <input type="text" class="Q" id="inputQ17"></div>
+                    <div class="A" id="A17">
+                        <div>
+                            A<input type="text" id="A171">
+                        </div>
+                        <div>
+                            B<input type="text" id="A172"></div>
+
+                        <div>
+                            C<input type="text" id="A173"></div>
+
+                        <div>
+                            D<input type="text" id="A174"></div>
+                        <div>
+                            CR<input type="text" id="c17">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="input" id="input18">
+                    <div>Q18 <input type="text" class="Q" id="inputQ18"></div>
+                    <div class="A" id="A18">
+                        <div>
+                            A <input type="text" id="A181">
+                        </div>
+                        <div>
+                            B <input type="text" id="A182"></div>
+                        <div>
+                            C <input type="text" id="A183"></div>
+                        <div>
+                            D <input type="text" id="A184"></div>
+                        <div>
+                            CR<input type="text" id="c18">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input19">
+                    <div>Q19 <input type="text" class="Q" id="inputQ19"></div>
+                    <div class="A" id="A19">
+                        <div>
+                            A <input type="text" id="A191">
+                        </div>
+                        <div>
+                            B <input type="text" id="A192"></div>
+                        <div>
+                            C <input type="text" id="A193"></div>
+                        <div>
+                            D <input type="text" id="A194"></div>
+                        <div>
+                            CR<input type="text" id="c19">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input20">
+                    <div>Q20 <input type="text" class="Q" id="inputQ20"></div>
+                    <div class="A" id="A20">
+                        <div>
+                            A <input type="text" id="A201">
+                        </div>
+                        <div>
+                            B <input type="text" id="A202"></div>
+                        <div>
+                            C <input type="text" id="A203"></div>
+                        <div>
+                            D <input type="text" id="A204"></div>
+                        <div>
+                            CR<input type="text" id="c20">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box6">
+                <div class="input" id="input21">
+                    <div>Q21 <input type="text" class="Q" id="inputQ21"></div>
+                    <div class="A" id="A21">
+                        <div>
+                            A <input type="text" id="A211">
+                        </div>
+                        <div>
+                            B <input type="text" id="A212"></div>
+                        <div>
+                            C <input type="text" id="A213"></div>
+                        <div>
+                            D <input type="text" id="A214"></div>
+                        <div>
+                            CR<input type="text" id="c21">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input22">
+                    <div>Q22 <input type="text" class="Q" id="inputQ22"></div>
+                    <div class="A" id="A22">
+                        <div>
+                            A <input type="text" id="A221">
+                        </div>
+                        <div>
+                            B <input type="text" id="A222"></div>
+                        <div>
+                            C <input type="text" id="A223"></div>
+                        <div>
+                            D <input type="text" id="A224"></div>
+                        <div>
+                            CR<input type="text" id="c22">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input23">
+                    <div>Q23 <input type="text" class="Q" id="inputQ23"></div>
+                    <div class="A" id="A23">
+                        <div>
+                            A <input type="text" id="A231">
+                        </div>
+                        <div>
+                            B <input type="text" id="A232"></div>
+                        <div>
+                            C <input type="text" id="A233"></div>
+                        <div>
+                            D <input type="text" id="A234"></div>
+                        <div>
+                            CR<input type="text" id="c23">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input24">
+                    <div>Q24 <input type="text" class="Q" id="inputQ24"></div>
+                    <div class="A" id="A24">
+                        <div>
+                            A <input type="text" id="A241">
+                        </div>
+                        <div>
+                            B <input type="text" id="A242"></div>
+                        <div>
+                            C <input type="text" id="A243"></div>
+                        <div>
+                            D <input type="text" id="A244"></div>
+                        <div>
+                            CR<input type="text" id="c24">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box7">
+                <div class="input" id="input25">
+                    <div>Q25 <input type="text" class="Q" id="inputQ25"></div>
+                    <div class="A" id="A25">
+                        <div>
+                            A <input type="text" id="A251">
+                        </div>
+                        <div>
+                            B <input type="text" id="A252"></div>
+                        <div>
+                            C <input type="text" id="A253"></div>
+                        <div>
+                            D <input type="text" id="A254"></div>
+                        <div>
+                            CR<input type="text" id="c25">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input26">
+                    <div>Q26 <input type="text" class="Q" id="inputQ26"></div>
+                    <div class="A" id="A26">
+                        <div>
+                            A <input type="text" id="A261">
+                        </div>
+                        <div>
+                            B <input type="text" id="A262"></div>
+                        <div>
+                            C <input type="text" id="A263"></div>
+                        <div>
+                            D <input type="text" id="A264"></div>
+                        <div>
+                            CR<input type="text" id="c26">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input27">
+                    <div>Q27 <input type="text" class="Q" id="inputQ27"></div>
+                    <div class="A" id="A27">
+                        <div>
+                            A <input type="text" id="A271">
+                        </div>
+                        <div>
+                            B <input type="text" id="A272"></div>
+                        <div>
+                            C <input type="text" id="A273"></div>
+                        <div>
+                            D <input type="text" id="A274"></div>
+                        <div>
+                            CR<input type="text" id="c27">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input28">
+                    <div>Q28 <input type="text" class="Q" id="inputQ28"></div>
+                    <div class="A" id="A28">
+                        <div>
+                            A <input type="text" id="A281">
+                        </div>
+                        <div>
+                            B <input type="text" id="A282"></div>
+                        <div>
+                            C <input type="text" id="A283"></div>
+                        <div>
+                            D <input type="text" id="A284"></div>
+                        <div>
+                            CR<input type="text" id="c28">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box8">
+                <div class="input" id="input29">
+                    <div>Q29 <input type="text" class="Q" id="inputQ29"></div>
+                    <div class="A" id="A29">
+                        <div>
+                            A <input type="text" id="A291">
+                        </div>
+                        <div>
+                            B <input type="text" id="A292"></div>
+                        <div>
+                            C <input type="text" id="A293"></div>
+                        <div>
+                            D <input type="text" id="A294"></div>
+                        <div>
+                            CR<input type="text" id="c29">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input30">
+                    <div>Q30 <input type="text" class="Q" id="inputQ30"></div>
+                    <div class="A" id="A30">
+                        <div>
+                            A <input type="text" id="A301">
+                        </div>
+                        <div>
+                            B <input type="text" id="A302"></div>
+                        <div>
+                            C <input type="text" id="A303"></div>
+                        <div>
+                            D <input type="text" id="A304"></div>
+                        <div>
+                            CR<input type="text" id="c30">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input31">
+                    <div>Q31 <input type="text" class="Q" id="inputQ31"></div>
+                    <div class="A" id="A31">
+                        <div>
+                            A <input type="text" id="A311">
+                        </div>
+                        <div>
+                            B <input type="text" id="A312"></div>
+                        <div>
+                            C <input type="text" id="A313"></div>
+                        <div>
+                            D <input type="text" id="A314"></div>
+                        <div>
+                            CR<input type="text" id="c31">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input32">
+                    <div>Q32 <input type="text" class="Q" id="inputQ32"></div>
+                    <div class="A" id="A32">
+                        <div>
+                            A <input type="text" id="A321">
+                        </div>
+                        <div>
+                            B <input type="text" id="A322"></div>
+                        <div>
+                            C <input type="text" id="A323"></div>
+                        <div>
+                            D <input type="text" id="A324"></div>
+                        <div>
+                            CR<input type="text" id="c32">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box9">
+                <div class="input" id="input33">
+                    <div>Q33 <input type="text" class="Q" id="inputQ33"></div>
+                    <div class="A" id="A33">
+                        <div>
+                            A <input type="text" id="A331">
+                        </div>
+                        <div>
+                            B <input type="text" id="A332"></div>
+                        <div>
+                            C <input type="text" id="A333"></div>
+                        <div>
+                            D <input type="text" id="A334"></div>
+                        <div>
+                            CR<input type="text" id="c33">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input34">
+                    <div>Q34 <input type="text" class="Q" id="inputQ34"></div>
+                    <div class="A" id="A34">
+                        <div>
+                            A <input type="text" id="A341">
+                        </div>
+                        <div>
+                            B <input type="text" id="A342"></div>
+                        <div>
+                            C <input type="text" id="A343"></div>
+                        <div>
+                            D <input type="text" id="A344"></div>
+                        <div>
+                            CR<input type="text" id="c34">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input35">
+                    <div>Q35 <input type="text" class="Q" id="inputQ35"></div>
+                    <div class="A" id="A35">
+                        <div>
+                            A <input type="text" id="A351">
+                        </div>
+                        <div>
+                            B <input type="text" id="A352"></div>
+                        <div>
+                            C <input type="text" id="A353"></div>
+                        <div>
+                            D <input type="text" id="A354"></div>
+                        <div>
+                            CR<input type="text" id="c35">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input36">
+                    <div>Q36 <input type="text" class="Q" id="inputQ36"></div>
+                    <div class="A" id="A36">
+                        <div>
+                            A <input type="text" id="A361">
+                        </div>
+                        <div>
+                            B <input type="text" id="A362"></div>
+                        <div>
+                            C <input type="text" id="A363"></div>
+                        <div>
+                            D <input type="text" id="A364"></div>
+                        <div>
+                            CR<input type="text" id="c36">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box10">
+                <div class="input" id="input37">
+                    <div>Q37 <input type="text" class="Q" id="inputQ37"></div>
+                    <div class="A" id="A37">
+                        <div>
+                            A <input type="text" id="A371">
+                        </div>
+                        <div>
+                            B <input type="text" id="A372"></div>
+                        <div>
+                            C <input type="text" id="A373"></div>
+                        <div>
+                            D <input type="text" id="A374"></div>
+                        <div>
+                            CR<input type="text" id="c37">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input38">
+                    <div>Q38 <input type="text" class="Q" id="inputQ38"></div>
+                    <div class="A" id="A38">
+                        <div>
+                            A <input type="text" id="A381">
+                        </div>
+                        <div>
+                            B <input type="text" id="A382"></div>
+                        <div>
+                            C <input type="text" id="A383"></div>
+                        <div>
+                            D <input type="text" id="A384"></div>
+                        <div>
+                            CR<input type="text" id="c38">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input39">
+                    <div>Q39 <input type="text" class="Q" id="inputQ39"></div>
+                    <div class="A" id="A39">
+                        <div>
+                            A <input type="text" id="A391">
+                        </div>
+                        <div>
+                            B <input type="text" id="A392"></div>
+                        <div>
+                            C <input type="text" id="A393"></div>
+                        <div>
+                            D <input type="text" id="A394"></div>
+                        <div>
+                            CR<input type="text" id="c39">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input40">
+                    <div>Q40 <input type="text" class="Q" id="inputQ40"></div>
+                    <div class="A" id="A40">
+                        <div>
+                            A <input type="text" id="A401">
+                        </div>
+                        <div>
+                            B <input type="text" id="A402"></div>
+                        <div>
+                            C <input type="text" id="A403"></div>
+                        <div>
+                            D <input type="text" id="A404"></div>
+                        <div>
+                            CR<input type="text" id="c40">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box11">
+                <div class="input" id="input41">
+                    <div>Q41 <input type="text" class="Q" id="inputQ41"></div>
+                    <div class="A" id="A41">
+                        <div>
+                            A <input type="text" id="A411">
+                        </div>
+                        <div>
+                            B <input type="text" id="A412"></div>
+                        <div>
+                            C <input type="text" id="A413"></div>
+                        <div>
+                            D <input type="text" id="A414"></div>
+                        <div>
+                            CR<input type="text" id="c41">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input42">
+                    <div>Q42 <input type="text" class="Q" id="inputQ42"></div>
+                    <div class="A" id="A42">
+                        <div>
+                            A <input type="text" id="A421">
+                        </div>
+                        <div>
+                            B <input type="text" id="A422"></div>
+                        <div>
+                            C <input type="text" id="A423"></div>
+                        <div>
+                            D <input type="text" id="A424"></div>
+                        <div>
+                            CR<input type="text" id="c42">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input43">
+                    <div>Q43 <input type="text" class="Q" id="inputQ43"></div>
+                    <div class="A" id="A43">
+                        <div>
+                            A <input type="text" id="A431">
+                        </div>
+                        <div>
+                            B <input type="text" id="A432"></div>
+                        <div>
+                            C <input type="text" id="A433"></div>
+                        <div>
+                            D <input type="text" id="A434"></div>
+                        <div>
+                            CR<input type="text" id="c43">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input44">
+                    <div>Q44 <input type="text" class="Q" id="inputQ44"></div>
+                    <div class="A" id="A44">
+                        <div>
+                            A <input type="text" id="A441">
+                        </div>
+                        <div>
+                            B <input type="text" id="A442"></div>
+                        <div>
+                            C <input type="text" id="A443"></div>
+                        <div>
+                            D <input type="text" id="A444"></div>
+                        <div>
+                            CR<input type="text" id="c44">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box12">
+                <div class="input" id="input45">
+                    <div>Q45 <input type="text" class="Q" id="inputQ45"></div>
+                    <div class="A" id="A45">
+                        <div>
+                            A <input type="text" id="A451">
+                        </div>
+                        <div>
+                            B <input type="text" id="A452"></div>
+                        <div>
+                            C <input type="text" id="A453"></div>
+                        <div>
+                            D <input type="text" id="A454"></div>
+                        <div>
+                            CR<input type="text" id="c45">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input46">
+                    <div>Q46 <input type="text" class="Q" id="inputQ46"></div>
+                    <div class="A" id="A46">
+                        <div>
+                            A <input type="text" id="A461">
+                        </div>
+                        <div>
+                            B <input type="text" id="A462"></div>
+                        <div>
+                            C <input type="text" id="A463"></div>
+                        <div>
+                            D <input type="text" id="A464"></div>
+                        <div>
+                            CR<input type="text" id="c46">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input47">
+                    <div>Q47 <input type="text" class="Q" id="inputQ47"></div>
+                    <div class="A" id="A47">
+                        <div>
+                            A <input type="text" id="A471">
+                        </div>
+                        <div>
+                            B <input type="text" id="A472"></div>
+                        <div>
+                            C <input type="text" id="A473"></div>
+                        <div>
+                            D <input type="text" id="A474"></div>
+                        <div>
+                            CR<input type="text" id="c47">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input48">
+                    <div>Q48 <input type="text" class="Q" id="inputQ48"></div>
+                    <div class="A" id="A48">
+                        <div>
+                            A <input type="text" id="A481">
+                        </div>
+                        <div>
+                            B <input type="text" id="A482"></div>
+                        <div>
+                            C <input type="text" id="A483"></div>
+                        <div>
+                            D <input type="text" id="A484"></div>
+                        <div>
+                            CR<input type="text" id="c48">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inputbox" id="box13">
+                <div class="input" id="input49">
+                    <div>Q49 <input type="text" class="Q" id="inputQ49"></div>
+                    <div class="A" id="A49">
+                        <div>
+                            A <input type="text" id="A491">
+                        </div>
+                        <div>
+                            B <input type="text" id="A492"></div>
+                        <div>
+                            C <input type="text" id="A493"></div>
+                        <div>
+                            D <input type="text" id="A494"></div>
+                        <div>
+                            CR<input type="text" id="c49">
+                        </div>
+                    </div>
+                </div>
+                <div class="input" id="input50">
+                    <div>Q50 <input type="text" class="Q" id="inputQ50"></div>
+                    <div class="A" id="A50">
+                        <div>
+                            A <input type="text" id="A501">
+                        </div>
+                        <div>
+                            B <input type="text" id="A502"></div>
+                        <div>
+                            C <input type="text" id="A503"></div>
+                        <div>
+                            D <input type="text" id="A504"></div>
+                        <div>
+                            CR<input type="text" id="c50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+     <footer class="footer font">
+            <div class="footerword">{{para["para4"]}}</div>
+            <div class="footerimg">
+                <a href="https://www.facebook.com" target="_blank"><img src="{{ url_for('static', filename='face.jpg') }}" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="{{ url_for('static', filename='ins.jpg') }}" alt=""></a>
+                <a href="https://twitter.com" target="_blank"><img src="{{ url_for('static', filename='twi.jpg') }}" alt=""></a>
+            </div>
+        </footer>
+    <script src="{{ url_for('static', filename='Exam1.js') }}"></script>
+</body>
+
+</html>

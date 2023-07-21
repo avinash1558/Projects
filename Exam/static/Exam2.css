@@ -1,0 +1,48 @@
+.subdt {
+    position: relative;
+    top: 150px;
+}
+
+.subdt1 {
+    height: 170px;
+    font-size: 35px;
+    border-radius: 6px;
+    border: 6px solid yellow;
+    background: tomato;
+}
+
+.subbox {
+    display: grid;
+    height: 100vh;
+    background: white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.student {
+    width: 1536px;
+    height: 150px;
+    margin: auto;
+}
+
+.box {
+    height: 150px;
+    width: 250px;
+    margin: 15px auto;
+    font-size: 32px;
+    border-radius: 6px;
+    background: #8be0d8;
+    border: 3px solid green;
+}
+
+.box button {
+    width: 120px;
+    font-size: 25px;
+    border-radius: 6px;
+    margin: 25px;
+    background-color: chocolate;
+}
+
+.box button:hover {
+    background: white;
+    color: black;
+}

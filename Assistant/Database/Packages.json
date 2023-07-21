@@ -1,0 +1,8 @@
+{
+    "RequirementModule": {
+        "install": "gtts pyaudio pywhatkit SpeechRecognition pyttsx3 phonenumbers wikipedia pytube googletrans==4.0.0rc1 pygame speedtest-cli pyjokes playsound==1.2.2 PyAutoGUI requests selenium==4.1.3 openai python-dotenv pyPDF2==1.26.0. bs4 pywikihow psutil MyAlarm opencv-python numpy opencv-contrib-python pyqt5 PySide2 PyQt5Designer pyperclip auto-py-to-exe  winshell",
+        "wheel":"pyaudio",
+        "bild": "datetime, webbrowser, os, smtplib,json,time,re,random",
+        "Twilio":"ForAssistantAvinash@1234567"
+    }
+}
